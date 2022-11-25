@@ -1,0 +1,31 @@
+Proceso metodosdepago
+	Definir op, valor, descuento, total Como Real;
+	
+	Escribir "<<< METODOS DE PAGO >>>";
+	Escribir "1. Efectivo";
+	Escribir "2. Tarjeta";
+	Escribir "3. Nequi o Daviplata";
+	
+	Escribir "escoja una de las opciones con su metodo de pago";
+	Leer op;
+	
+	Escribir "Digite el valor total del articulo";
+	Leer valor;
+	
+	Segun op Hacer
+		1:
+			descuento<-valor*0.15;
+			total<-valor-descuento;
+			Escribir "por pagar en efectivo se le asignará un descuento del 15% que equivale a $" ,descuento, ". El total a pagar es de $" ,total;
+		2:
+			descuento<-valor*0.10;
+			total<-valor-descuento;
+			Escribir "por pagar con tarjeta se le asignará un descuento del 10% que equivale a $" ,descuento, ". El total a pagar es de $" ,total;
+		3:
+			descuento<-valor*0.05;
+			total<-valor-descuento;
+			Escribir "por pagar con nequi o daviplata se le asignará un descuento del 5% que equivale a $" ,descuento, ". El total a pagar es de $" ,total;
+		De Otro Modo:
+			Escribir "escoja una de las opciones con su metodo de pago";
+	Fin Segun
+FinProceso

@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Inicia secion</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="vendors/feather/feather.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" type="text/css" href="js/select.dataTables.min.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/A D S I (1).png" />
+</head>
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="images/A D S I (1).png" class="mr-2" alt="logo"/></a>
+        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo.png" alt="logo"/></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="icon-menu"></span>
+        </button>
+        <ul class="navbar-nav mr-lg-2">
+          <li class="nav-item nav-search d-none d-lg-block">
+            <div class="input-group">
+              <div class="input-group-prepend hover-cursor" id="navbar-search-icon">
+                <span class="input-group-text" id="search">
+                  <i class="icon-search"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" id="navbar-search-input" placeholder="Busqueda nueva.." aria-label="search" aria-describedby="search">
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+              <i class="icon-bell mx-0"></i>
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Notificaciones</p>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-success">
+                    <i class="ti-info-alt mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Error de la aplicación
+                  </h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    En este momento
+
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-warning">
+                    <i class="ti-settings mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Ajustes</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Mensaje privado
+
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-info">
+                    <i class="ti-user mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Registro de nuevo usuario</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    hace 2 días
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+              <img src="images/tenge.jpg" alt="profile"/>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item">
+                <i class="ti-settings text-primary"></i>
+                Ajustes
+              </a>
+              <a class="dropdown-item">
+                <i class="ti-power-off text-primary"></i>
+                Cerrar sesión
+              </a>
+            </div>
+          </li>
+          <li class="nav-item nav-settings d-none d-lg-flex">
+            <a class="nav-link" href="#">
+              <i class="icon-ellipsis"></i>
+            </a>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="icon-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+      <div class="theme-setting-wrapper">
+        <div id="settings-trigger"><i class="ti-settings"></i></div>
+        <div id="theme-settings" class="settings-panel">
+          <i class="settings-close ti-close"></i>
+          <p class="settings-heading">Colores De La Barra Lateral</p>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border mr-3"></div>Blanco</div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border mr-3"></div>Negro</div>
+          <p class="settings-heading mt-2">Pieles De Cabecera</p>
+          <div class="color-tiles mx-0 px-4">
+            <div class="tiles success"></div>
+            <div class="tiles warning"></div>
+            <div class="tiles danger"></div>
+            <div class="tiles info"></div>
+            <div class="tiles dark"></div>
+            <div class="tiles default"></div>
+          </div>
+        </div>
+      </div>
+      <div id="right-sidebar" class="settings-panel">
+        <i class="settings-close ti-close"></i>
+        <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="todo-tab" data-toggle="tab" href="#todo-section" role="tab" aria-controls="todo-section" aria-expanded="true">Lista de que haceres</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="chats-tab" data-toggle="tab" href="#chats-section" role="tab" aria-controls="chats-section">Chats</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="setting-content">
+          <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel" aria-labelledby="todo-section">
+            <div class="add-items d-flex px-3 mb-0">
+              <form class="form w-100">
+                <div class="form-group d-flex">
+                  <input type="text" class="form-control todo-list-input" placeholder="Add To-do">
+                  <button type="submit" class="add btn btn-primary todo-list-add-btn" id="add-task">Agregar</button>
+                </div>
+              </form>
+            </div>
+            <div class="list-wrapper px-3">
+              <ul class="d-flex flex-column-reverse todo-list">
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Reunión de revisión del equipo a las 15:00
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Prepárate para la presentación
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Resolver todos los tickets de baja prioridad que vencen hoy
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Programar reunión para la próxima semana
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Revision del proyecto
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+              </ul>
+            </div>
+            <h4 class="px-3 text-muted mt-5 font-weight-light mb-0">Eventos</h4>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary mr-2"></i>
+                <span>Feb 11 2023</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Creando una página de componentes construye un js</p>
+              <p class="text-gray mb-0">El número total de sesiones</p>
+            </div>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary mr-2"></i>
+                <span>Feb 7 2023</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Encuentro con Alisa</p>
+              <p class="text-gray mb-0 ">llamar a sarah graves</p>
+            </div>
+          </div>
+          <!-- To do section tab ends -->
+          <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
+            <div class="d-flex align-items-center justify-content-between border-bottom">
+              <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Amigos</p>
+              <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 font-weight-normal">Ver todo</small>
+            </div>
+            <ul class="chat-list">
+              <li class="list active">
+                <div class="profile"><img src="images/faces/face1.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Larry</p>
+                  <p>No me baño</p>
+                </div>
+                <small class="text-muted my-auto">19 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face2.jpg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <div class="wrapper d-flex">
+                    <p>Isi</p>
+                  </div>
+                  <p>me gusta el arroz de pollo</p>
+                </div>
+                <div class="badge badge-success badge-pill my-auto mx-2">4</div>
+                <small class="text-muted my-auto">23 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face3.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>gus</p>
+                  <p>Soy homo :D</p>
+                </div>
+                <small class="text-muted my-auto">14 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face4.jpg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <p>Jose</p>
+                  <p>Soy noob en clash</p>
+                </div>
+                <small class="text-muted my-auto">2 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face5.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Yeanis</p>
+                  <p>Te invito a la reunion</p>
+                </div>
+                <small class="text-muted my-auto">5 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face6.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Darianis</p>
+                  <p>Bye</p>
+                </div>
+                <small class="text-muted my-auto">47 min</small>
+              </li>
+            </ul>
+          </div>
+          <!-- chat tab ends -->
+        </div>
+      </div>
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Portafolio Aprendiz</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-title">Pseudocodigo</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="html5/Act1 - Copy (2).pdf">Actividad 1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="html5/pse2.rar">Actividad 2</a></li>
+                <li class="nav-item"> <a class="nav-link" href="html5/pse3.rar">Actividad 3</a></li>
+                <li class="nav-item"> <a class="nav-link" href="html5/pse4.rar">Actividad 4</a></li>
+                <li class="nav-item"> <a class="nav-link" href="html5/pse5.rar">Actividad 5</a></li>
+                <li class="nav-item"> <a class="nav-link" href="html5/pse6.rar">Actividad 6</a></li>
+                <li class="nav-item"> <a class="nav-link" href="html5/pse7.rar">Actividad 7</a></li>
+                <li class="nav-item"> <a class="nav-link" href="html5/pse8.rar">Actividad 8</a></li>
+                <li class="nav-item"> <a class="nav-link" href="html5/pse9.rar">Actividad 9</a></li>
+                <li class="nav-item"> <a class="nav-link" href="html5/pse10.rar">Actividad 10</a></li>
+                <li class="nav-item"> <a class="nav-link" href="html5/pse11.rar">Actividad 11</a></li>
+                <li class="nav-item"> <a class="nav-link" href="html5/pse12.rar">Actividad 12</a></li>
+                <li class="nav-item"> <a class="nav-link" href="html5/pse13.rar">Actividad 13</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements|">
+              <i class="icon-columns menu-icon"></i>
+              <span class="menu-title">HTML 5</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="form-elements">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="html5/1.jpg">Actividad 1</a></li>
+              </ul>
+            
+            
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="html5/2.pdf">Actividad 2</a></li>
+              </ul>
+            
+            
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/watch?v=l-YZn5VkOtU&ab_channel=AngieSof%C3%ADaT%C3%A1maraHern%C3%A1ndez">Actividad 3</a></li>
+              </ul>
+            
+        
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="html5/4/">Actividad 4</a></li>
+              </ul>
+            
+        
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="html5/5/">Actividad 5</a></li>
+              </ul>
+            
+            
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="html5/6/">Actividad 6</a></li>
+              </ul>
+            
+         
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="html5/">Actividad 7</a></li>
+              </ul>
+      
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="html5/8/">Actividad 8</a></li>
+              </ul>
+            
+      
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="html5/9/">Actividad 9</a></li>
+              </ul>
+            
+           
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="html5/Formulario_.html">Actividad 10</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+              <i class="icon-bar-graph menu-icon"></i>
+              <span class="menu-title">CSS 3</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="charts">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="html5/Diagrama3CCS-Página-1 (1).jpg">Actividad 1</a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="html5/css1/">Actividad 2</a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="html5/css3/">Actividad 3</a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="html5/css4/">Actividad 4</a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="html5/css5/">Actividad 5</a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="html5/css6/">Actividad 6</a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="html5/css7/">Actividad 7</a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="html5/css Proyecto 1/">Actividad 8</a></li>
+              </ul>
+            </div>
+            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+              <i class="icon-grid-2 menu-icon"></i>
+              <span class="menu-title">Javascript 6</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="tables">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/tables/basic-table.html">Actividad 1</a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="html5/js2/">Actividad 2</a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="html5/js3/">Actividad 3</a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="html5/js4/">Actividad 4</a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="html5/js5/">Actividad 5</a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="html5/js6/">Actividad 6</a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="html5/js7/">Actividad 7</a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="html5/js8/">Actividad 8</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+              <i class="icon-contract menu-icon"></i>
+              <span class="menu-title">Python</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="icons">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="html5/py1.docx">Actividad 1</a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="html5/py2.rar">Actividad 2</a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="html5/for3.rar">Actividad 3</a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="html5/for4.rar">Actividad 4</a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="html5/for5.rar">Actividad 5</a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="html5/for6.rar">Actividad 6</a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="html5/for7.rar">Actividad 7</a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="html5/taller.docx">Actividad 8</a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="html5/for9.rar">Actividad 9</a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="html5/for10.rar">Actividad 10</a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="html5/for11.rar">Actividad 11</a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="html5/for12.rar">Actividad 12</a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="html5/for14.rar">Actividad 14</a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="html5/funciones.rar">Actividad 15</a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="html5/for16.rar">Actividad 16</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <i class="icon-head menu-icon"></i>
+              <span class="menu-title">usuario</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Acceso </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Registro </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#error" aria-expanded="false" aria-controls="error">
+              <i class="icon-ban menu-icon"></i>
+              <span class="menu-title">páginas de error</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="error">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> 404 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> 500 </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/documentation/documentation.html">
+              <i class="icon-paper menu-icon"></i>
+              <span class="menu-title">Documentación</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-12 grid-margin">
+              <div class="row">
+                <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+                  <h3 class="font-weight-bold">Bienvenido, estamos en linea!</h3>
+                  <h6 class="font-weight-normal mb-0">Analisis y Desarrollo de Sistemas de Informacion <span class="text-primary">Sena Regional Sucre</span></h6>
+                </div>
+                <div class="col-12 col-xl-4">
+                 <div class="justify-content-end d-flex">
+                  <div class="dropdown flex-md-grow-1 flex-xl-grow-0">
+                    <button class="btn btn-sm btn-light bg-white dropdown-toggle" type="button" id="dropdownMenuDate2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                     <i class="mdi mdi-calendar"></i> Hoy (10 de enero de 2021)
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuDate2">
+                      <a class="dropdown-item" href="#">Enero - Marzo</a>
+                      <a class="dropdown-item" href="#">Marzo - junio</a>
+                      <a class="dropdown-item" href="#">Junio - Agosto</a>
+                      <a class="dropdown-item" href="#">Agosto - Noviembre</a>
+                    </div>
+                  </div>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card tale-bg">
+                <div class="card-people mt-auto">
+                  <img src="html5/esca.gif" alt="people">
+                  <div class="weather-info">
+                    <div class="d-flex">
+                      <div>
+                        <h2 class="mb-0 font-weight-normal"><i class="icon-sun mr-2"></i>31<sup>C</sup></h2>
+                      </div>
+                      <div class="ml-2">
+                        <h4 class="location font-weight-normal">Sincelejo</h4>
+                        <h6 class="font-weight-normal">Colombia</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 grid-margin tramsparent">
+              <div class="row">
+                <div class="col-md-6 my-5 pb-5 stretch-card transparent">
+                  <div class="card card-tale">
+                    <div class="card-body">
+                      <p class="mb-4">Reuniones del Sena</p>
+                      <p class="fs-30 mb-2">4</p>
+                     
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 my-5 pb-5 stretch-card transparent">
+                  <div class="card card-dark-blue">
+                    <div class="card-body">
+                      <p class="mb-4">Actividades del Sena</p>
+                      <p class="fs-30 mb-2">6</p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 my-5  stretch-card transparent">
+                  <div class="card card-light-blue">
+                    <div class="card-body">
+                      <p class="mb-4">Partidos del Sena</p>
+                      <p class="fs-30 mb-2">11</p>
+                    
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 my-5 stretch-card transparent">
+                  <div class="card card-light-danger">
+                    <div class="card-body">
+                      <p class="mb-4">Examenes del Sena</p>
+                      <p class="fs-30 mb-2">2</p>
+            
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 grid-margin stretch-card">
+              <img src="html5/gifl.webp" alt="">
+            </div>
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card">
+                <img src="html5/za.jpg" alt="">
+              </div>
+            </div>
+          </div>
+              </div>
+            </div>
+          </div>
+          
+        
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2022. <a href="https://eliseovega.github.io/" target="_blank">Eliud Alviz</a> Aprendiz</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">SENA <i class="ti-heart text-danger ml-1"></i></span>
+          </div>
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Programa <a href="https://www.themewagon.com/" target="_blank">ADSI</a></span> 
+          </div>
+        </footer> 
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>   
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="vendors/chart.js/Chart.min.js"></script>
+  <script src="vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <script src="js/dataTables.select.min.js"></script>
+
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js/dashboard.js"></script>
+  <script src="js/Chart.roundedBarCharts.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>
+

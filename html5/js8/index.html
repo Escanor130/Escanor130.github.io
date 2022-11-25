@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/informacion-personal.png" type="image/x-icon">
+    <title>Datos De Usuario</title>
+</head>
+
+<body>
+    <section class="container">
+
+        <header>
+            <h2>Datos De Usuarios</h2>
+        </header>
+        <article>
+
+            <form id="formUser" name="formUser">
+                <div class="form-control">
+                    <label for="user"> Nombre De Usuario</label>
+                    <input type="text" id="user">
+                    <p id="validaUser"></p>
+                </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                    <p id="validaEmail"></p>
+                </div>
+                <div class="form-control">
+                    <label for="password"> password</label>
+                    <input type="password" id="password">
+                    <p id="validaPassword"></p>
+                </div>
+                <div class="form-control">
+                    <label for="password">Confirmar password</label>
+                    <input type="password" name="" id="passwordC">
+                    <p id="valida_passwordC"></p>
+                </div>
+                <input type="button" value="enviar" onclick="validaCampos()">
+            </form>
+        </article>
+
+    </section>
+
+    <div>
+        <script src="js/app.js"></script>
+    </div>
+</body>
+
+</html>

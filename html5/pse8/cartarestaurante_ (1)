@@ -1,0 +1,76 @@
+Proceso cartarestaurante
+	Definir op, p,cantidad, descuento, propina, total Como Real;
+	
+	Escribir "             MENÚ            ";
+	Escribir "-----------------------------";
+	Escribir "1. Almuerzo Corriente";
+	Escribir "2. Asados (Res, Cerdo, Pollo)";
+	Escribir "3. Bandeja (Paisa, Costeña)";
+	Escribir "4. Bebidas (Jugos, Refrescos)";
+	Escribir "5. Postres";
+	Escribir "0. Salir";
+	
+	Escribir "Elije una opción del menú (0 - 5)";
+	Leer op;
+	
+	Escribir "Ingrese el precio del producto";
+	Leer p;
+	
+	Escribir "cantidad de producto que desea ordenar";
+	Leer cantidad;
+	
+	Segun op Hacer
+		1:
+			subtotal<-p*cantidad;
+			descuento<-subtotal*0.1;
+			propina<-subtotal*0.07;
+			total<-(subtotal-descuento)+propina;
+			Escribir "Almuerzo Corriente";
+			Escribir "subtotal: $" ,subtotal;
+			Escribir "Descuento: $" ,descuento;
+			Escribir "Propina: $" ,propina;
+			Escribir"Total de consumo: $" ,total;
+		2:
+			subtotal<-p*cantidad;
+			descuento<-subtotal*0.08;
+			propina<-subtotal*0.07;
+			total<-(subtotal-descuento)+propina;
+			Escribir "Asados (Res, Cerdo, Pollo)";
+			Escribir "subtotal: $" ,subtotal;
+			Escribir "Descuento: $" ,descuento;
+			Escribir "Propina: $" ,propina;
+			Escribir"Total de consumo: $" ,total;
+		3:
+			subtotal<-p*cantidad;
+			descuento<-subtotal*0.12;
+			propina<-subtotal*0.07;
+			total<-(subtotal-descuento)+propina;
+			Escribir "Bandeja (Paisa, Costeña)";
+			Escribir "subtotal: $" ,subtotal;
+			Escribir "Descuento: $" ,descuento;
+			Escribir "Propina: $" ,propina;
+			Escribir"Total de consumo: $" ,total;
+		4:
+			subtotal<-p*cantidad;
+			descuento<-subtotal*0.15;
+			propina<-subtotal*0.07;
+			total<-(subtotal-descuento)+propina;
+			Escribir "Bebidas (Jugos, Refrescos)";
+			Escribir "subtotal: $" ,subtotal;
+			Escribir "Descuento: $" ,descuento;
+			Escribir "Propina: $" ,propina;
+			Escribir"Total de consumo: $" ,total;
+		5:
+			subtotal<-p*cantidad;
+			descuento<-subtotal*0.20;
+			propina<-subtotal*0.07;
+			total<-(subtotal-descuento)+propina;
+			Escribir "Postres";
+			Escribir "subtotal: $" ,subtotal;
+			Escribir "Descuento: $" ,descuento;
+			Escribir "Propina: $" ,propina;
+			Escribir"Total de consumo: $" ,total;
+		De Otro Modo:
+			Escribir "Elije una opción del menú (0 - 5)"
+	Fin Segun
+FinProceso

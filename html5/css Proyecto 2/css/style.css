@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+
+}
+
+body{
+    background-color: #C3F8FF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section{
+    width: 80%;
+    height: 100vh;
+    background-color: #FFF6BF;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+section article{
+    width: 1000px;
+    height: 250px;
+    background-color:#ABD9FF;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+section article .item{
+    width: 33%;
+    height: 90%;
+    background-color: #C3F8FF;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    
+    
+    
+}

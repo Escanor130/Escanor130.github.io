@@ -1,0 +1,44 @@
+Proceso costodellamada
+	Definir op, min, n Como Real;
+	
+	Escribir "1.601.";
+	Escribir "2.602.";
+	Escribir "3.604.";
+	Escribir "4.605.";
+	Escribir "5.606.";
+	Escribir "6.607.";
+	Escribir "7.608.";
+	
+	Escribir" escoja una de las opciones";
+	Leer op;
+	Escribir "digite la cantidad de minutos de llamada";
+	Leer min;
+	
+	Segun op Hacer
+		1:
+			n<-58*min
+			Escribir "el cotos total de la llamada es de $" ,n, " y la llamada se ralizo en las zonas de Cundinamarca y Bogotá D.C.";
+		2:
+			n<-59*min
+			Escribir "el cotos total de la llamada es de $" ,n, " y la llamada se ralizo en las zonas de Cauca, Nariño y Valle.";
+		3:
+			n<-57*min
+			Escribir "el cotos total de la llamada es de $" ,n, " y la llamada se ralizo en las zonas de Antioquia, Córdoba y Chocó.";
+		4:
+			n<-56*min
+			Escribir "el cotos total de la llamada es de $" ,n, " y la llamada se ralizo en las zonas de Atlántico,Bolívar,César,La Guajira,Magdalena y sucre";
+		5:
+			n<-59*min
+			Escribir "el cotos total de la llamada es de $" ,n, " y la llamada se ralizo en las zonas deCaldas, Quindío y Risaralda.";
+		6:
+			n<-60*min
+			Escribir "el cotos total de la llamada es de $" ,n, " y la llamada se ralizo en las zonas de Arauca, Norte de Santander y Santander.";
+		7:
+			n<-61*min
+			Escribir "el cotos total de la llamada es de $" ,n, " y la llamada se ralizo en las zonas de Amazonas,Boyacá,Casanare,Caquetá,Guaviare,etc";
+		De Otro Modo:
+			Escribir "ingrese una opcion valida";
+	Fin Segun
+	
+	
+FinProceso

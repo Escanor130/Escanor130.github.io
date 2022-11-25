@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto+Condensed & family= Roboto:ital,wght@0,300;0,400;0,500;1,400 & display=swap');
+
+*{
+    margin: 0px;
+    padding: 0;
+}
+body{
+    font-family:'Roboto', sans-serif;
+}
+
+body header{
+    background-color: #7FBCD2;
+    color: rgb(10, 10, 10);
+    padding: 30px;
+}
+
+body header h1{
+    color: rgb(10, 10, 10);
+    
+}
+
+body header nav{
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+body header a{
+    background-color: #FFEEAF;
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    padding: 1px 12px 1px 12px ;
+    border-radius: 4px;
+    box-shadow: 0 0 6px #FFEEAF;
+    
+}
+
+body header nav a:hover{
+    background-color: #A5F1E9;
+    color:rgb(10, 10, 10)
+}
+
+.js{
+    padding-left: 30px;
+}

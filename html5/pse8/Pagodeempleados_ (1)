@@ -1,0 +1,33 @@
+Proceso pagodeempleados
+	Definir op, n, dias Como Entero;
+	
+	Escribir "<<< EMPLEADOS >>>";
+	Escribir "1. Cajero";
+	Escribir "2. Administrador";
+	Escribir "3. Preparador de Mezcla";
+	Escribir "4. Mantenimiento";
+	
+	Escribir "ingrese el numero del empleado";
+	Leer op;
+	
+	Escribir "ingrese la cantidad de dias que el empleado trabajó en la semana";
+	Leer dias;
+	
+	Segun op Hacer
+		1:
+			n<-26500*dias;
+			Escribir "la suma que debe pagar el dueño al cajero es de $" ,n;
+		2:
+			n<-53000*dias;
+			Escribir "la suma que debe pagar el dueño al administrador es de $" ,n;
+		3:
+			n<-27000*dias;
+			Escribir "la suma que debe pagar el dueño al preparador de mezcla es de $" ,n;
+		4:
+			n<-21800*dias;
+			Escribir "la suma que debe pagar el dueño al de mantenimiento es de $" ,n;
+		De Otro Modo:
+			Escribir "ingrese una opcion valida";
+	Fin Segun
+
+FinProceso

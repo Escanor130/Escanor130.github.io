@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto+Condensed & family= Roboto:ital,wght@0,300;0,400;0,500;1,400 & display=swap');
+
+body{
+    font-family:'Roboto', sans-serif;
+}
+
+
+body {
+    background-color:#E1FFEE;
+    color: rgb(10, 10, 10);
+    padding: 30px;
+    
+}
+
+form{
+    background-color: #b8e2ec;
+    padding: 30px;
+}
+h1{
+    color: #7FBCD2;
+}
+
+form:hover{
+    background-color:#FFEEAF ;
+    color:black;
+}
+
+
+
